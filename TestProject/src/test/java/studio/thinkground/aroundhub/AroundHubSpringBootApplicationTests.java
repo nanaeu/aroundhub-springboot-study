@@ -1,10 +1,10 @@
-package studio.thinkground.testproject;
+package studio.thinkground.aroundhub;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TestprojectApplicationTests {
+class AroundHubSpringBootApplicationTests {
 
     @Test
     void contextLoads() {

@@ -9,10 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>studio.thinkground</groupId>
-    <artifactId>testproject</artifactId>
+    <artifactId>AroundHub</artifactId>
     <version>1.0.0</version>
-    <name>testproject</name>
-    <description>testproject</description>
+    <packaging>jar</packaging>
+    <name>AroundHub_SpringBoot</name>
+    <description>Spring Boot Project for Education</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
