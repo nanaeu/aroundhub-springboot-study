@@ -1,4 +1,4 @@
-package studio.thinkground.aroundhub.dto;
+package studio.thinkground.aroundhub.data.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import studio.thinkground.aroundhub.dto.MemberDTO;
+import studio.thinkground.aroundhub.data.dto.MemberDTO;
 
 @RestController
 @RequestMapping("/api/v1/post-api")
