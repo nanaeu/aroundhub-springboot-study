@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.*;
 import studio.thinkground.aroundhub.data.dto.ProductDto;
 import studio.thinkground.aroundhub.service.ProductService;
 
+@RestController
+@RequestMapping("/api/v1/product-api")
 public class ProductController {
 
     private ProductService productService;

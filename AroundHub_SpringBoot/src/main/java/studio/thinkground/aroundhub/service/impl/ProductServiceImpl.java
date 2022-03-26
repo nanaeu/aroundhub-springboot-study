@@ -10,7 +10,7 @@ import studio.thinkground.aroundhub.service.ProductService;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    private ProductDataHandler productDataHandler;
+    ProductDataHandler productDataHandler;
 
     @Autowired
     public ProductServiceImpl(ProductDataHandler productDataHandler) {
