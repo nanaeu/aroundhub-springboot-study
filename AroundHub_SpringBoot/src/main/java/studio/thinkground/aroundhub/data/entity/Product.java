@@ -11,13 +11,14 @@ import lombok.Setter;
 import lombok.ToString;
 import studio.thinkground.aroundhub.data.dto.ProductDto;
 
-@Entity
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @ToString
+@Entity
 @Table(name = "product")
 public class Product {
 
