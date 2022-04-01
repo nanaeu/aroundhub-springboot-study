@@ -9,7 +9,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import studio.thinkground.aroundhub.data.dto.ProductDto;
+import studio.thinkground.aroundhub.dto.ProductDto;
 
 
 @Getter

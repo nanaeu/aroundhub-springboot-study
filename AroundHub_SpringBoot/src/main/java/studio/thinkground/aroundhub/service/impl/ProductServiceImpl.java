@@ -2,7 +2,7 @@ package studio.thinkground.aroundhub.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import studio.thinkground.aroundhub.data.dto.ProductDto;
+import studio.thinkground.aroundhub.dto.ProductDto;
 import studio.thinkground.aroundhub.data.entity.Product;
 import studio.thinkground.aroundhub.data.handler.ProductDataHandler;
 import studio.thinkground.aroundhub.service.ProductService;

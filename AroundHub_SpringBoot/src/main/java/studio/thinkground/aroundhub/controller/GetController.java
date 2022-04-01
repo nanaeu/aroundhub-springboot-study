@@ -1,7 +1,7 @@
 package studio.thinkground.aroundhub.controller;
 
 import org.springframework.web.bind.annotation.*;
-import studio.thinkground.aroundhub.data.dto.MemberDTO;
+import studio.thinkground.aroundhub.dto.MemberDTO;
 
 import java.util.Map;
 

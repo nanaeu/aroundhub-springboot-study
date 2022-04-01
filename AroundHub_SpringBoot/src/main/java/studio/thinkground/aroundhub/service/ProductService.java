@@ -1,6 +1,6 @@
 package studio.thinkground.aroundhub.service;
 
-import studio.thinkground.aroundhub.data.dto.ProductDto;
+import studio.thinkground.aroundhub.dto.ProductDto;
 
 public interface ProductService {
     // loosely-coupling
