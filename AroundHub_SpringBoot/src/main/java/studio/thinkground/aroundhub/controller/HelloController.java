@@ -1,9 +1,8 @@
 package studio.thinkground.aroundhub.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /*
 * 1. @PathVariable: GET 형식의 요청에서 파라미터를 전달하기 위해 URL에 값을 담아 요청하는 방법
@@ -23,12 +22,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    private final Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
+
     // @RequestMapping : value와 method로 정의하여 API를 개발하는 방식. 이제는 고전적인 방법이라 사용X
     // @RequestMapping(value = "/hello", method= RequestMethod.GET)
-    
     // @GetMapping: 별도의 파라미터 없이 GET API 호출하는 경우 사용
-    @GetMapping("/hello")
+    @RequestMapping("/hello")
     public String hello(){
         return "Hello World!";
+    }
+
+    @PostMapping("log-test")
+    public void logTest() {
+        LOGGER.trace("Trace log");
+        LOGGER.debug("Debug log");
+        LOGGER.info("Info log");
+        LOGGER.warn("Warn log");
+        LOGGER.error("Error log");
     }
 }
