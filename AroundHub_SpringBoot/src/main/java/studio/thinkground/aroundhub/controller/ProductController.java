@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import studio.thinkground.aroundhub.common.Constants;
+import studio.thinkground.aroundhub.common.exception.AroundHubException;
 import studio.thinkground.aroundhub.dto.ProductDto;
 import studio.thinkground.aroundhub.service.ProductService;
 
@@ -62,4 +64,9 @@ public class ProductController {
     // http://localhost:8080/api/v1/product-api/product/{productId}
     @DeleteMapping(value="/product/{productId}")
     public ProductDto deleteProduct(@PathVariable String productId) { return null; }
+
+    @PostMapping(value = "/product/exception")
+    public void exceptionTest() throws AroundHubException {
+        throw new AroundHubException(Constants.ExceptionClass.PRODUCT, HttpStatus.FORBIDDEN, "의도한 에러가 발생하였습니다.");
+   }
 }
